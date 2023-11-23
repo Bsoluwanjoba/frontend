@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Itim } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const kreator = Itim({ subsets: ['latin'] , weight: ['400'] })
 
 export const metadata = {
   title: 'Beginners React Class',
@@ -14,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={kreator.className}>
         <Navbar />
-        <div className='h-[70vh]'>
+        <div className='min-h-[70vh]'>
         {children}
         
         </div>
