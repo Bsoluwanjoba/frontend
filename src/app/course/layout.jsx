@@ -1,4 +1,4 @@
-import Courses from "./courses"
+import Courses from "./Courses"
 
 export const metadata = {
     title: 'Courses in My Library',
