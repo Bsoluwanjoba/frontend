@@ -1,0 +1,9 @@
+.image{
+    border-radius: 0 25px 0 25px;
+    border: 3px gold solid;
+}
+
+.image figcaption{
+    background-color: gold;
+    padding: 8px;
+}
