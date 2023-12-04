@@ -1,3 +1,5 @@
+import Courses from "../course/Courses"
+
 export const metadata = {
     title: 'About My Library',
     description: 'Frontend 6B6 Class 1 on React',
@@ -7,6 +9,7 @@ export const metadata = {
 export default function layout({children}) {
   return (
     <div>
+      <Courses />
         {children}
     </div>
   )
