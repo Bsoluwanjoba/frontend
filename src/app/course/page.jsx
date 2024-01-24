@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 
 
@@ -172,7 +173,7 @@ export const books = [
   }
 ]
 const bookCard = books.map(book =>(
-  <section key={book.id} className="p-10 shadow-2xl rounded-2xl">
+  <section key={book.id} className="p-10 mx-4 shadow-2xl rounded-2xl transition ease-linear duration-[0.6s] hover:scale-[0.85]">
 
     <Link href={`/books/${book.title.split(' ').join('-')}`} title={`${book.title} by ${book.author}`}>
     <h2>{book.title}</h2>
@@ -182,9 +183,17 @@ const bookCard = books.map(book =>(
 ))
 
 export default function Course() {
+ 
   return (
+
+    <section>
+         <form className='flex items-center justify-center py-[1em]'>
+    <input type="search" name="search" id="search" placeholder='Search For Food & Categories' className='w-3/5 outline-8 rounded-[40px] border-2 border-[#d81] border-solid p-4 my-5 m-auto' />
+  </form>
+
     <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
       {bookCard}
     </div>
+    </section>
   )
 }

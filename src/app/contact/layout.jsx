@@ -1,4 +1,4 @@
-import Contacts from "./Contacts"
+
 
 export const metadata = {
     title: 'Contact My Library',
@@ -9,7 +9,7 @@ export const metadata = {
 export default function layout({children}) {
   return (
     <div>
-        <Contacts />
+       
         {children}
     </div>
   )

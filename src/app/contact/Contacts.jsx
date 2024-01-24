@@ -9,9 +9,9 @@ export default function Contacts() {
         
         <div className="grid grid-cols-4">
         <section>
-         <Image src='/teamimages/mem3.jpg' alt='member' width='300' height='100' />
+         <Image src='/teamimages/mem3.jpg' alt='member' width='200' height='200' />
          <div>
-        <h2>Jane Doe</h2>
+        <h2></h2>
         <p>CEO &amp; Founder</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>example@example.com</p>
@@ -21,7 +21,7 @@ export default function Contacts() {
 
 
         <section>
-        <Image src="/teamimages/mem.jpg" alt='member' width='150' height='50' style={100}/>
+        <Image src="/teamimages/mem.jpg" alt='member' width='200' height='200' style={100}/>
         <div>
         <h2>Mike Ross</h2>
         <p>Art Director</p>
@@ -45,7 +45,7 @@ export default function Contacts() {
 
 
         <section>
-        <Image src='/teamimages/mem2.jpg' alt='member' width='200' height='200' />
+        <Image src='/teamimages/mem2.jpg' alt='member' width='200' height='220' />
          <div>
         <h2>John Doe</h2>
         <p>Designer</p>

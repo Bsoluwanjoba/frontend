@@ -1,12 +1,12 @@
-import { Itim } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const kreator = Itim({ subsets: ['latin'] , weight: ['400'] })
+const kreator = Poppins({ subsets: ['latin'] , weight: ['400'] })
 
 export const metadata = {
-  title: 'Beginners React Class',
+  title: 'Kreator Advanced Library',
   description: 'Frontend 6B6 Class 1 on React',
   keywords: 'React, Next, Javascript'
 }
