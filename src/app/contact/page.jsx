@@ -43,7 +43,7 @@ const contactCard = contacts.map( contact =>(
   <section key={contact.id} className=" shadow-2xl rounded-sm transition ease-linear duration-[0.6s] hover:scale-[0.85]">
  
      <div className="text-center place-content-center p-5">
-    <Image src={contact.image} width={200} height={200} className="m-auto"/>
+    <Image src={contact.image}  alt="team" width={200} height={200} className="m-auto"/>
     <p className="text-3xl font-semibold uppercase p-2 text-[#d81]">{contact.contact}</p>
     <p>{contact.position}</p>
     <p>{contact.mail}</p>
@@ -54,8 +54,9 @@ const contactCard = contacts.map( contact =>(
 ) )
 export default function Contact() {
   return (
-    <div>
-     {contactCard} 
+    <div className="h-[90vh]">
+      <h1 className="text-center text-3xl">MEET THE TEAM</h1>
+    <div className="flex md:flex-row flex-col gap-4 my-[4em] relative"> {contactCard} </div>
     </div>
   )
 }

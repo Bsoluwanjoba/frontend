@@ -18,8 +18,8 @@ export default function Navbar() {
   return (
     <nav className="flex bg-black">
       <div className="flex gap-5 md:mr-[420px] mr-0 items-center">
-        <Image src='/android-chrome-512x512.png' width={50} height={30}/>
-        <h1 className="text-xl text-[#d81] font-extrabold uppercase tracking-widest">Kreator's Blog</h1>
+        <Image src='/android-chrome-512x512.png' alt="logo" width={50} height={30}/>
+        <h1 className="text-xl text-[#d81] font-extrabold uppercase tracking-widest">{`Kreator's Blog`}</h1>
       </div>
       <RxHamburgerMenu  className={`${showNav ? 'hidden' : 'block md:hidden'} cursor-pointer text-[#d81] text-[30px] md:ml-0 ml-auto`} onClick={onClick} />
     <MdOutlineCancel className={`${showNav ? 'block md:hidden' : 'hidden'} cursor-pointer text-[#d81] text-[30px] md:ml-0 m-auto`} onClick={onClick} />
