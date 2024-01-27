@@ -25,7 +25,7 @@ export default function Navbar() {
 
         <div className='flex gap-2 md:ml-[70px] ml-[120px] items-center'>
          <Image src="/android-chrome-512x512.png" alt='logo' width={30} height={30}/>
-         <h1 className={`${kreat.className} text-[#d81]`}>Kreator's Library</h1> 
+         <h1 className={`${kreat.className} text-[#d81]`}>{`Kreator's Library`}</h1> 
         </div>
 
         <div className={`${showNav ? 'hidden' : 'flex md:hidden'} items-center`}>
