@@ -21,23 +21,23 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className='flex md:flex-row flex-col bg-black md:py-[20px] py-[16px] md:h-0 h-[85px]'>
+      <nav className='flex md:flex-row flex-col bg-black md:py-[20px] py-[16px] md:h-0 h-[65px]'>
 
-        <div className='flex gap-2 md:ml-[70px] ml-[120px] items-center'>
+        <div className='flex gap-2 md:ml-[70px] ml-[50px] items-center'>
          <Image src="/android-chrome-512x512.png" alt='logo' width={30} height={30}/>
          <h1 className={`${kreat.className} text-[#d81]`}>{`Kreator's Library`}</h1> 
         </div>
 
         <div className={`${showNav ? 'hidden' : 'flex md:hidden'} items-center`}>
         <RxHamburgerMenu
-          className={`block ml-[380px] mt-[-33px] cursor-pointer text-[30px] text-[#d81]`}
+          className={`block ml-[330px] mt-[-33px] cursor-pointer text-[30px] text-[#d81]`}
           onClick={onClick}
         />
       </div>
 
       <div className={`${showNav ? 'block md:hidden' : 'hidden'} items-center`}>
         <MdOutlineCancel
-          className="ml-[380px] items-center mt-[-33px] cursor-pointer text-[30px] text-[#d81]"
+          className="ml-[330px] items-center mt-[-33px] cursor-pointer text-[30px] text-[#d81]"
           onClick={onClick}
         />
       </div>
