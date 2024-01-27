@@ -1,10 +1,13 @@
 "use client"
-import Link from "next/link"
-import Image from "next/image"
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Courgette } from 'next/font/google'
 import { RxHamburgerMenu } from "react-icons/rx"
 import { MdOutlineCancel } from "react-icons/md"
-import React, {useState} from 'react'
 
+
+const kreat = Courgette({ subsets: ['latin'] , weight: ['400'] })
 
 
 export default function Navbar() {
@@ -15,30 +18,45 @@ export default function Navbar() {
     setShowNav(!showNav)
   }
 
+
   return (
-    <nav className="flex bg-black">
-      <div className="flex gap-5 md:mr-[420px] mr-0 items-center">
-        <Image src='/android-chrome-512x512.png' alt="logo" width={50} height={30}/>
-        <h1 className="text-xl text-[#d81] font-extrabold uppercase tracking-widest">{`Kreator's Blog`}</h1>
+    <div>
+      <nav className='flex md:flex-row flex-col bg-black md:py-[20px] py-[16px] md:h-0 h-[85px]'>
+
+        <div className='flex gap-2 md:ml-[70px] ml-[120px] items-center'>
+         <Image src="/android-chrome-512x512.png" alt='logo' width={30} height={30}/>
+         <h1 className={`${kreat.className} text-[#d81]`}>Kreator's Library</h1> 
+        </div>
+
+        <div className={`${showNav ? 'hidden' : 'flex md:hidden'} items-center`}>
+        <RxHamburgerMenu
+          className={`block ml-[380px] mt-[-33px] cursor-pointer text-[30px] text-[#d81]`}
+          onClick={onClick}
+        />
       </div>
-      <RxHamburgerMenu  className={`${showNav ? 'hidden' : 'block md:hidden'} cursor-pointer text-[#d81] text-[30px] md:ml-0 ml-auto`} onClick={onClick} />
-    <MdOutlineCancel className={`${showNav ? 'block md:hidden' : 'hidden'} cursor-pointer text-[#d81] text-[30px] md:ml-0 m-auto`} onClick={onClick} />
-          <ul className={`md:flex md:flex-row ${showNav ? 'flex' : 'hidden'} flex-col justify-center text-white md:h-[60px] h-[60vh] items-center gap-10`}>
 
-        
-          <Link href="/" className=" text-white ease-in p-[6px] duration-500 rounded-md hover:bg-[#d81]">
+      <div className={`${showNav ? 'block md:hidden' : 'hidden'} items-center`}>
+        <MdOutlineCancel
+          className="ml-[380px] items-center mt-[-33px] cursor-pointer text-[30px] text-[#d81]"
+          onClick={onClick}
+        />
+      </div>
+
+        <div className='text-white md:ml-[460px] ml-0 items-center'>
+          <ul className={`flex md:flex-row ${showNav ? 'flex' : 'hidden'} flex-col justify-center md:gap-6 gap-10 items-center bg-black`}>
+           <Link href='/' className='py-1 hover:bg-[#d81] rounded-md px-1 translate-x-2 ease-in-out duration-700'>
             <li>Home</li>
-            </Link>
+           </Link>
+           <Link href='/contact' className='py-1 hover:bg-[#d81] rounded-md px-1 translate-x-2 ease-in-out duration-700'>
+            <li>Team</li>
+           </Link>
+           <Link href='/course' className='py-1 hover:bg-[#d81] rounded-md px-1 translate-x-2 ease-in-out duration-700'>
+            <li>Books</li>
+           </Link>
+          </ul>
+        </div>
 
-          <Link href="/contact" className="hover:bg-[#d81] text-white ease-in p-[6px] duration-300 rounded-md">
-            <li>Contact</li>
-            </Link>
-
-            <Link href="/course" className="hover:bg-[#d81] text-white ease-in p-[6px] duration-300 rounded-md">
-            <li className="text-white">Course</li>
-            </Link>
-           
-        </ul>
-    </nav>
+      </nav>
+    </div>
   )
 }

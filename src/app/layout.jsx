@@ -1,9 +1,9 @@
-import { Poppins } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-const kreator = Poppins({ subsets: ['latin'] , weight: ['400'] })
+const kreator = Lato({ subsets: ['latin'] , weight: ['400'] })
 
 export const metadata = {
   title: 'Kreator Advanced Library',

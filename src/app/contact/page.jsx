@@ -54,9 +54,9 @@ const contactCard = contacts.map( contact =>(
 ) )
 export default function Contact() {
   return (
-    <div className="h-[90vh]">
+    <div>
       <h1 className="text-center text-3xl">MEET THE TEAM</h1>
-    <div className="flex md:flex-row flex-col gap-4 my-[4em] relative"> {contactCard} </div>
+    <div className="flex md:flex-row flex-col gap-4 my-[4em]"> {contactCard} </div>
     </div>
   )
 }
