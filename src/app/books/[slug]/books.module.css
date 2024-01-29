@@ -1,10 +1,10 @@
 .image{
     border-radius: 0 25px 0 25px;
-    border: 3px gold solid;
+    border: 3px #d81 solid;
     background-image: radial-gradient(rgba(0, 0, 0, 0.711), );
 }
 
 .image figcaption{
-    background-color: gold;
+    background-color: #d81;
     padding: 8px;
 }

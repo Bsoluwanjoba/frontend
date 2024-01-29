@@ -5,16 +5,11 @@ import Link from "next/link"
 
 export default function Main() {
   return (
-    <div style={{backgroundImage: `radial-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(/morebooks.jpg)`}} className="h-[81.7vh] bg-cover">
+    <div style={{backgroundImage: `radial-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url(/morebooks.jpg)`}} className="h-[81.7vh] bg-cover">
       
-      <div className="relative text-center">
-         
-      <p className=" sm:text-2xl md:text-6xl text-[25px] uppercase font-extrabold text-[#d81] tracking-widest text-center p-5 place-content-center absolute sm:top-[350%] sm:left-[15%] md:top-[420%] md:left-[5%] top-[650%] left-[8%] shadow-inner cursor-pointer">{`Welcome To Kreator's Library`}</p>
-         <button type="button" className="bg-[#d81] p-[9px] rounded-md -outline-offset-4 outline-2 outline-dashed outline-black text-black font-semibold text-[17px] w-[210px] relative sm:top-[300px] sm:bottom-2 sm:left-3 sm:right-5 md:top-[300px] md:bottom-2 md:left-3 md:right-5 top-[420px] bottom-2 left-3 right-5 shadow-[silver] shadow-sm cursor-pointer">
-          <Link href="/course">Go To Books</Link>
-          </button> 
-      </div>
-        
+      <h2 className="md:text-6xl text-[20px] text-[#d81] md:ml-[90px] ml-[30px] relative md:top-[190px] top-[280px] font-bold uppercase tracking-widest">Welcome To Kreator's Library</h2> 
+        <Link href='/course' className="md:ml-[590px] ml-[160px] md:relative relative md:top-[220px] top-[330px]  bg-[#d81] p-[15px] rounded-lg outline-dashed outline-offset-2 outline-[#751]">GO TO BOOKS</Link>
+            
     </div>
   )
 }
