@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <div>
      <nav className='flex gap-11 bg-black h-[9vh] relative'>
-      <div className='flex md:ml-[150px] ml-auto items-center gap-1'>
+      <div className='flex md:ml-[150px] items-center gap-1'>
       <Image src="/android-chrome-512x512.png" width={30} height={30} alt='logo' />
-      <p className='text-[#d81] w-full'>Kreator Library</p>
+      <p className='text-[#d81]'>Kreator Library</p>
       </div>
 
       <div className='md:ml-[700px] ml-0'>
-        <ul className={`bg-[#d81] md:bg-transparent  md:text-white md:font-normal font-bold md:gap-3 gap-20   md:relative md:flex md:flex-row flex flex-col fixed h-[81.6vh] md:h-[100%] w-[50%] md:top-0 top-[82px] bottom-0 left-0 items-center md:justify-center justify-center transition-transform transform ease-in-out duration-500 py-4 ${showNav ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+        <ul className={`bg-[#d81] md:bg-transparent  md:text-white md:font-normal font-bold md:gap-3 gap-20   md:relative md:flex md:flex-row flex flex-col fixed h-[81.6vh] md:h-[100%] w-[50%] md:top-0 top-[67px] bottom-0 left-0 items-center md:justify-center justify-center transition-transform transform ease-in-out duration-500 py-4 ${showNav ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
           
         <li><MdOutlineCancel className='cursor-pointer md:hidden text-3xl text-white' onClick={navbar}/></li>
             
@@ -43,7 +43,7 @@ export default function Navbar() {
             <li>Books</li>
           </Link>
         </ul>
-        <RxHamburgerMenu onClick={navbar} className='text-4xl md:hidden cursor-pointer text-[#d81] mt-[26px] ml-[190px]' />
+        <RxHamburgerMenu onClick={navbar} className='text-4xl md:hidden cursor-pointer text-[#d81] mt-[16px] ml-[190px]' />
 
 
       </div>
